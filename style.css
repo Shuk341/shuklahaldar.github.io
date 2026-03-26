@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+}
+
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #1f1f1f, #000);
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero span {
+  color: #00ffd5;
+}
+
+.hero p {
+  margin-top: 15px;
+  color: #aaa;
+}
+
+/* ABOUT */
+.about p {
+  max-width: 700px;
+  margin: 20px auto;
+  color: #ccc;
+}
+
+/* SKILLS */
+.skill-box span {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  border: 1px solid #00ffd5;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.skill-box span:hover {
+  background: #00ffd5;
+  color: #000;
+}
+
+/* PROJECTS */
+.note {
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  position: relative;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.project-card img {
+  width: 100%;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.8);
+  width: 100%;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: 0.3s;
+}
+
+.project-card:hover .overlay {
+  transform: translateY(0);
+}
+
+/* CONTACT */
+.contact p {
+  margin-top: 10px;
+  color: #ccc;
+}
