@@ -15,25 +15,16 @@ body {
 /* HERO */
 .hero {
   text-align: center;
-  padding: 100px 20px;
+  padding: 80px;
 }
 
 .hero span {
   color: #00ffd5;
 }
 
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: #00ffd5;
-  color: black;
-  text-decoration: none;
-}
-
 /* SECTIONS */
 section {
-  padding: 60px 20px;
+  padding: 40px80px;
   text-align: center;
 }
 
