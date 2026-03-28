@@ -8,59 +8,73 @@ body {
   font-family: 'Inter', sans-serif;
   background: #0f0f0f;
   color: #fff;
+  scroll-behavior: smooth;
 }
 
-section {
-  padding: 80px 20px;
-  text-align: center;
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #000;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
 }
 
 /* HERO */
 .hero {
-  background: linear-gradient(135deg, #1f1f1f, #000);
-}
-
-.hero h1 {
-  font-size: 3rem;
+  text-align: center;
+  padding: 100px 20px;
 }
 
 .hero span {
   color: #00ffd5;
 }
 
-.hero p {
-  margin-top: 15px;
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #00ffd5;
+  color: black;
+  text-decoration: none;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.note {
   color: #aaa;
 }
 
-/* ABOUT */
-.about p {
-  max-width: 700px;
-  margin: 20px auto;
-  color: #ccc;
-}
-
-/* SKILLS */
-.skill-box span {
-  display: inline-block;
+/* TABS */
+.tabs button {
   margin: 10px;
   padding: 10px 20px;
-  border: 1px solid #00ffd5;
-  border-radius: 25px;
-  transition: 0.3s;
-}
-
-.skill-box span:hover {
   background: #00ffd5;
-  color: #000;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
 }
 
 /* PROJECTS */
-.note {
-  color: #888;
-  margin-bottom: 20px;
-}
-
 .project-grid {
   display: flex;
   flex-wrap: wrap;
@@ -69,33 +83,18 @@ section {
 }
 
 .project-card {
-  position: relative;
   width: 300px;
-  overflow: hidden;
+  background: #1a1a1a;
+  padding: 10px;
   border-radius: 10px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
 }
 
 .project-card img {
   width: 100%;
-  display: block;
-}
-
-.overlay {
-  position: absolute;
-  bottom: 0;
-  background: rgba(0,0,0,0.8);
-  width: 100%;
-  padding: 20px;
-  transform: translateY(100%);
-  transition: 0.3s;
-}
-
-.project-card:hover .overlay {
-  transform: translateY(0);
-}
-
-/* CONTACT */
-.contact p {
-  margin-top: 10px;
-  color: #ccc;
+  border-radius: 10px;
 }
