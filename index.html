@@ -4,81 +4,83 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shukla Haldar | Web Developer</title>
-
   <link rel="stylesheet" href="style.css">
-
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>Hi, I'm <span>Shukla Haldar</span></h1>
-    <p>Web Developer specializing in WordPress, Shopify & Modern Web Design</p>
-  </section>
+<!-- NAVBAR -->
+<nav>
+  <h2>Shukla</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-  <!-- ABOUT -->
-  <section class="about">
-    <h2>About Me</h2>
-    <p>
-      I am a passionate Web Developer experienced in building responsive and visually engaging websites using WordPress, Shopify, Wix, HTML, and CSS.
-      I focus on delivering clean design, performance optimization, and seamless user experience.
-    </p>
-  </section>
+<!-- HERO -->
+<section class="hero">
+  <h1>Hi, I'm <span>Shukla Haldar</span></h1>
+  <p id="typing"></p>
+  <a href="#" class="btn">Download Resume</a>
+</section>
 
-  <!-- SKILLS -->
-  <section class="skills">
-    <h2>Skills</h2>
-    <div class="skill-box">
-      <span>WordPress</span>
-      <span>Shopify</span>
-      <span>Wix</span>
-      <span>HTML</span>
-      <span>CSS</span>
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    Web Developer experienced in WordPress, Shopify, Wix and modern frontend technologies.
+    I build responsive, high-performing and visually engaging websites.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="tabs">
+    <button onclick="filterProjects('all')">All</button>
+    <button onclick="filterProjects('wordpress')">WordPress</button>
+    <button onclick="filterProjects('shopify')">Shopify</button>
+    <button onclick="filterProjects('html')">HTML/CSS</button>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+  <p class="note">*Client projects – live links not shared*</p>
+
+  <div class="project-grid">
+
+    <div class="project-card wordpress">
+      <img src="project1.jpg">
+      <h3>Business Website</h3>
     </div>
-  </section>
 
-  <!-- PROJECTS -->
-  <section class="projects">
-    <h2>Projects</h2>
-    <p class="note">*Live links not shared due to client confidentiality*</p>
-
-    <div class="project-grid">
-
-      <div class="project-card">
-        <img src="project1.jpg">
-        <div class="overlay">
-          <h3>Business Website</h3>
-          <p>WordPress based responsive website with optimized UI & performance.</p>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <img src="project2.jpg">
-        <div class="overlay">
-          <h3>Shopify Store</h3>
-          <p>E-commerce store with product pages and smooth checkout experience.</p>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <img src="project3.jpg">
-        <div class="overlay">
-          <h3>Landing Page</h3>
-          <p>High-converting landing page built using HTML & CSS.</p>
-        </div>
-      </div>
-
+    <div class="project-card shopify">
+      <img src="project2.jpg">
+      <h3>Shopify Store</h3>
     </div>
-  </section>
 
-  <!-- CONTACT -->
-  <section class="contact">
-    <h2>Let's Connect</h2>
-    <p>Email: shukla.haldar341@gmail.com</p>
-  </section>
+    <div class="project-card html">
+      <img src="project3.jpg">
+      <h3>Landing Page</h3>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: shukla.haldar341@gmail.com</p>
+</section>
+
+<script src="script.js"></script>
 
 </body>
 </html>
