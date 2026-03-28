@@ -11,29 +11,6 @@ body {
   scroll-behavior: smooth;
 }
 
-/* NAVBAR */
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  background: #000;
-  position: sticky;
-  top: 0;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
 
 /* HERO */
 .hero {
